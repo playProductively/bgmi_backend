@@ -1,0 +1,34 @@
+GET http://localhost:5000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTA0NjQ5NzgsImV4cCI6MTY5MzA1Njk3OCwiYXVkIjoiNjRjMjQ5Y2M1NDViZGZkZDQyZGQ2Y2IwIiwiaXNzIjoidmlja3kifQ.v0Jb_BE0XnMFq2fqokhnHgKD5L0mcldhfUnYRh9Cn7Y
+
+
+###loginRoute
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email" : "vigneshn0922000@gmail.com",
+    "password" : "Vicky@123"
+}
+
+###register Route
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "name" : "vignesh",
+    "email" : "vigneshn20922000@gmail.com",
+    "password" : "Vicky@123"
+}
+
+###refreshtoken Route
+POST http://localhost:5000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTA0NjQ5NzgsImV4cCI6MTcyMjAyMjU3OCwiYXVkIjoiNjRjMjQ5Y2M1NDViZGZkZDQyZGQ2Y2IwIiwiaXNzIjoidmlja3kifQ.iD9OsW1U1SgLAvBuBLEvKeyjCxPXCaQ84aUgZcXyHdM"
+}
+
+
+###logout Route
+DELETE  http://localhost:5000/auth/logout
